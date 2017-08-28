@@ -1,0 +1,30 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<link rel="manifest" href="manifest.json">
+	<base href="/" />
+	<meta charset="utf-8">
+	<title>ChitChat</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container">
+	<div id="app">Loading...</div>
+</div>
+
+<script>
+	// Register the service worker
+	if ('serviceWorker' in navigator) {
+		navigator.serviceWorker.register('/sw.js').then(function(registration) {
+// Registration was successful
+			console.log('ServiceWorker registration successful with scope: ', registration.scope);
+		}).catch(function(err) {
+// registration failed :(
+			console.log('ServiceWorker registration failed: ', err);
+		});
+	}
+</script>
+
+</body>
+</html>

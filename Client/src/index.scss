@@ -1,0 +1,48 @@
+.usersList {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  box-sizing: border-box;
+  height: calc(50vh - 70px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.messageList {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  box-sizing: border-box;
+  height: calc(80vh - 70px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.msgBubble {
+  position:relative;
+  padding:5px;
+  width:60%;
+  margin-bottom: -1em;
+  margin-right:50px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  color: black;
+}
+
+.msgTriangle {
+  content:""; /* triangle */
+  position:absolute;
+  bottom:-10px; /* value = - border-top-width - border-bottom-width */
+  left: 50px; /* controls horizontal position */
+  border-width: 10px 10px 0; /* vary these values to change the angle of the vertex */
+  border-style: solid;
+}
+
+.enabledBtn{
+  color: white !important;
+}
+
+body{
+  background-color: gray;
+}
+
+
